@@ -16,6 +16,19 @@ dev = [
     "fakeredis[lua]>=2.26.0",
 ]
 
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+wordle-server = "wordle_server.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wordle_server"]
+
+[tool.uv]
+package = true
+
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 testpaths = ["tests"]

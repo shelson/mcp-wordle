@@ -1,4 +1,4 @@
-from src.wordle_server.game import get_feedback, render_board, MAX_GUESSES
+from wordle_server.game import get_feedback, render_board, MAX_GUESSES
 
 
 # --- get_feedback ---

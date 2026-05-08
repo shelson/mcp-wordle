@@ -2,7 +2,7 @@ import uuid
 import json
 from datetime import datetime, timezone
 
-from src.wordle_server.game import MAX_GUESSES
+from wordle_server.game import MAX_GUESSES
 
 
 def _decode_hash(data: dict) -> dict:

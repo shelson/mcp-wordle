@@ -1,7 +1,7 @@
 import redis.asyncio as redis
 from fastmcp import FastMCP
 
-from src.wordle_server import auth, storage, words, game
+from wordle_server import auth, storage, words, game
 
 
 def create_server(r: redis.Redis) -> FastMCP:

@@ -1,5 +1,5 @@
 import pytest
-from src.wordle_server.auth import (
+from wordle_server.auth import (
     validate_admin_token,
     validate_player_token,
     register_player,

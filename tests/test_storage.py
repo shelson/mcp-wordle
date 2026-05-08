@@ -1,6 +1,6 @@
 import json
 import pytest
-from src.wordle_server.storage import (
+from wordle_server.storage import (
     create_game,
     get_game,
     archive_game,
@@ -237,7 +237,7 @@ async def test_list_games_includes_total_guesses_as_int(redis_db, admin_token):
 
 # --- Stats queries ---
 
-from src.wordle_server.storage import (
+from wordle_server.storage import (
     get_player_stats,
     get_game_stats,
     get_global_stats,

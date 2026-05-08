@@ -1,5 +1,5 @@
 import pytest
-from src.wordle_server.words import (
+from wordle_server.words import (
     _get_word_set,
     is_valid_word,
     pick_random_word,

@@ -722,7 +722,7 @@ wheels = [
 [[package]]
 name = "mcp-wordle"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "english-words" },
     { name = "fastmcp" },

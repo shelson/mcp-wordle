@@ -1,5 +1,5 @@
 import pytest
-from src.wordle_server.server import create_server
+from wordle_server.server import create_server
 
 
 @pytest.fixture
