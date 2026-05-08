@@ -1,0 +1,3612 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "conftest.py",
+      "file_type": "code",
+      "source_file": "tests/conftest.py",
+      "source_location": "L1",
+      "id": "tests_conftest_py",
+      "community": 7,
+      "norm_label": "conftest.py"
+    },
+    {
+      "label": "fake_redis()",
+      "file_type": "code",
+      "source_file": "tests/conftest.py",
+      "source_location": "L6",
+      "id": "tests_conftest_fake_redis",
+      "community": 7,
+      "norm_label": "fake_redis()"
+    },
+    {
+      "label": "sample_words()",
+      "file_type": "code",
+      "source_file": "tests/conftest.py",
+      "source_location": "L11",
+      "id": "tests_conftest_sample_words",
+      "community": 7,
+      "norm_label": "sample_words()"
+    },
+    {
+      "label": "Small controlled word set for testing.",
+      "file_type": "rationale",
+      "source_file": "tests/conftest.py",
+      "source_location": "L12",
+      "id": "tests_conftest_rationale_12",
+      "community": 7,
+      "norm_label": "small controlled word set for testing."
+    },
+    {
+      "label": "test_words.py",
+      "file_type": "code",
+      "source_file": "tests/test_words.py",
+      "source_location": "L1",
+      "id": "tests_test_words_py",
+      "community": 5,
+      "norm_label": "test_words.py"
+    },
+    {
+      "label": "test_get_word_set_returns_five_letter_uppercase()",
+      "file_type": "code",
+      "source_file": "tests/test_words.py",
+      "source_location": "L9",
+      "id": "tests_test_words_test_get_word_set_returns_five_letter_uppercase",
+      "community": 5,
+      "norm_label": "test_get_word_set_returns_five_letter_uppercase()"
+    },
+    {
+      "label": "test_is_valid_word_accepts_valid_word()",
+      "file_type": "code",
+      "source_file": "tests/test_words.py",
+      "source_location": "L18",
+      "id": "tests_test_words_test_is_valid_word_accepts_valid_word",
+      "community": 5,
+      "norm_label": "test_is_valid_word_accepts_valid_word()"
+    },
+    {
+      "label": "test_is_valid_word_rejects_wrong_length()",
+      "file_type": "code",
+      "source_file": "tests/test_words.py",
+      "source_location": "L24",
+      "id": "tests_test_words_test_is_valid_word_rejects_wrong_length",
+      "community": 5,
+      "norm_label": "test_is_valid_word_rejects_wrong_length()"
+    },
+    {
+      "label": "test_is_valid_word_rejects_non_alpha()",
+      "file_type": "code",
+      "source_file": "tests/test_words.py",
+      "source_location": "L29",
+      "id": "tests_test_words_test_is_valid_word_rejects_non_alpha",
+      "community": 5,
+      "norm_label": "test_is_valid_word_rejects_non_alpha()"
+    },
+    {
+      "label": "test_is_valid_word_rejects_not_in_set()",
+      "file_type": "code",
+      "source_file": "tests/test_words.py",
+      "source_location": "L34",
+      "id": "tests_test_words_test_is_valid_word_rejects_not_in_set",
+      "community": 5,
+      "norm_label": "test_is_valid_word_rejects_not_in_set()"
+    },
+    {
+      "label": "test_pick_random_word_returns_from_set()",
+      "file_type": "code",
+      "source_file": "tests/test_words.py",
+      "source_location": "L38",
+      "id": "tests_test_words_test_pick_random_word_returns_from_set",
+      "community": 5,
+      "norm_label": "test_pick_random_word_returns_from_set()"
+    },
+    {
+      "label": "test_pick_random_word_handles_single_word_set()",
+      "file_type": "code",
+      "source_file": "tests/test_words.py",
+      "source_location": "L45",
+      "id": "tests_test_words_test_pick_random_word_handles_single_word_set",
+      "community": 5,
+      "norm_label": "test_pick_random_word_handles_single_word_set()"
+    },
+    {
+      "label": "test_auth.py",
+      "file_type": "code",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L1",
+      "id": "tests_test_auth_py",
+      "community": 1,
+      "norm_label": "test_auth.py"
+    },
+    {
+      "label": "clean_redis()",
+      "file_type": "code",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L12",
+      "id": "tests_test_auth_clean_redis",
+      "community": 7,
+      "norm_label": "clean_redis()"
+    },
+    {
+      "label": "test_init_admin_token()",
+      "file_type": "code",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L19",
+      "id": "tests_test_auth_test_init_admin_token",
+      "community": 1,
+      "norm_label": "test_init_admin_token()"
+    },
+    {
+      "label": "test_validate_admin_token_valid()",
+      "file_type": "code",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L25",
+      "id": "tests_test_auth_test_validate_admin_token_valid",
+      "community": 1,
+      "norm_label": "test_validate_admin_token_valid()"
+    },
+    {
+      "label": "test_validate_admin_token_invalid()",
+      "file_type": "code",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L32",
+      "id": "tests_test_auth_test_validate_admin_token_invalid",
+      "community": 1,
+      "norm_label": "test_validate_admin_token_invalid()"
+    },
+    {
+      "label": "test_validate_player_token_valid()",
+      "file_type": "code",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L38",
+      "id": "tests_test_auth_test_validate_player_token_valid",
+      "community": 1,
+      "norm_label": "test_validate_player_token_valid()"
+    },
+    {
+      "label": "test_validate_player_token_invalid()",
+      "file_type": "code",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L48",
+      "id": "tests_test_auth_test_validate_player_token_invalid",
+      "community": 1,
+      "norm_label": "test_validate_player_token_invalid()"
+    },
+    {
+      "label": "test_register_player_creates_token()",
+      "file_type": "code",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L54",
+      "id": "tests_test_auth_test_register_player_creates_token",
+      "community": 1,
+      "norm_label": "test_register_player_creates_token()"
+    },
+    {
+      "label": "test_create_admin_token()",
+      "file_type": "code",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L65",
+      "id": "tests_test_auth_test_create_admin_token",
+      "community": 1,
+      "norm_label": "test_create_admin_token()"
+    },
+    {
+      "label": "test_server_admin.py",
+      "file_type": "code",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L1",
+      "id": "tests_test_server_admin_py",
+      "community": 2,
+      "norm_label": "test_server_admin.py"
+    },
+    {
+      "label": "redis_db()",
+      "file_type": "code",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L6",
+      "id": "tests_test_server_admin_redis_db",
+      "community": 7,
+      "norm_label": "redis_db()"
+    },
+    {
+      "label": "client()",
+      "file_type": "code",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L15",
+      "id": "tests_test_server_admin_client",
+      "community": 2,
+      "norm_label": "client()"
+    },
+    {
+      "label": "test_create_game_random_word()",
+      "file_type": "code",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L26",
+      "id": "tests_test_server_admin_test_create_game_random_word",
+      "community": 2,
+      "norm_label": "test_create_game_random_word()"
+    },
+    {
+      "label": "test_create_game_specific_word()",
+      "file_type": "code",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L35",
+      "id": "tests_test_server_admin_test_create_game_specific_word",
+      "community": 2,
+      "norm_label": "test_create_game_specific_word()"
+    },
+    {
+      "label": "test_create_game_invalid_admin_token()",
+      "file_type": "code",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L44",
+      "id": "tests_test_server_admin_test_create_game_invalid_admin_token",
+      "community": 2,
+      "norm_label": "test_create_game_invalid_admin_token()"
+    },
+    {
+      "label": "test_archive_game()",
+      "file_type": "code",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L52",
+      "id": "tests_test_server_admin_test_archive_game",
+      "community": 2,
+      "norm_label": "test_archive_game()"
+    },
+    {
+      "label": "test_create_admin_token()",
+      "file_type": "code",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L62",
+      "id": "tests_test_server_admin_test_create_admin_token",
+      "community": 2,
+      "norm_label": "test_create_admin_token()"
+    },
+    {
+      "label": "test_list_games()",
+      "file_type": "code",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L70",
+      "id": "tests_test_server_admin_test_list_games",
+      "community": 2,
+      "norm_label": "test_list_games()"
+    },
+    {
+      "label": "test_get_game_stats()",
+      "file_type": "code",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L81",
+      "id": "tests_test_server_admin_test_get_game_stats",
+      "community": 2,
+      "norm_label": "test_get_game_stats()"
+    },
+    {
+      "label": "test_get_global_stats()",
+      "file_type": "code",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L93",
+      "id": "tests_test_server_admin_test_get_global_stats",
+      "community": 2,
+      "norm_label": "test_get_global_stats()"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "tests/__init__.py",
+      "source_location": "L1",
+      "id": "tests_init_py",
+      "community": 11,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "test_game.py",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L1",
+      "id": "tests_test_game_py",
+      "community": 0,
+      "norm_label": "test_game.py"
+    },
+    {
+      "label": "test_get_feedback_all_correct()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L6",
+      "id": "tests_test_game_test_get_feedback_all_correct",
+      "community": 0,
+      "norm_label": "test_get_feedback_all_correct()"
+    },
+    {
+      "label": "test_get_feedback_all_wrong()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L11",
+      "id": "tests_test_game_test_get_feedback_all_wrong",
+      "community": 0,
+      "norm_label": "test_get_feedback_all_wrong()"
+    },
+    {
+      "label": "test_get_feedback_partial_match()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L16",
+      "id": "tests_test_game_test_get_feedback_partial_match",
+      "community": 0,
+      "norm_label": "test_get_feedback_partial_match()"
+    },
+    {
+      "label": "test_get_feedback_duplicate_letters_in_guess()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L22",
+      "id": "tests_test_game_test_get_feedback_duplicate_letters_in_guess",
+      "community": 0,
+      "norm_label": "test_get_feedback_duplicate_letters_in_guess()"
+    },
+    {
+      "label": "test_get_feedback_duplicate_letters_in_target()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L28",
+      "id": "tests_test_game_test_get_feedback_duplicate_letters_in_target",
+      "community": 0,
+      "norm_label": "test_get_feedback_duplicate_letters_in_target()"
+    },
+    {
+      "label": "test_get_feedback_duplicate_match_priority()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L34",
+      "id": "tests_test_game_test_get_feedback_duplicate_match_priority",
+      "community": 0,
+      "norm_label": "test_get_feedback_duplicate_match_priority()"
+    },
+    {
+      "label": "test_get_feedback_case_insensitive()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L42",
+      "id": "tests_test_game_test_get_feedback_case_insensitive",
+      "community": 0,
+      "norm_label": "test_get_feedback_case_insensitive()"
+    },
+    {
+      "label": "test_render_board_all_green()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L49",
+      "id": "tests_test_game_test_render_board_all_green",
+      "community": 0,
+      "norm_label": "test_render_board_all_green()"
+    },
+    {
+      "label": "test_render_board_all_white()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L55",
+      "id": "tests_test_game_test_render_board_all_white",
+      "community": 0,
+      "norm_label": "test_render_board_all_white()"
+    },
+    {
+      "label": "test_render_board_mixed()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L61",
+      "id": "tests_test_game_test_render_board_mixed",
+      "community": 0,
+      "norm_label": "test_render_board_mixed()"
+    },
+    {
+      "label": "test_render_board_empty_guesses()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L71",
+      "id": "tests_test_game_test_render_board_empty_guesses",
+      "community": 0,
+      "norm_label": "test_render_board_empty_guesses()"
+    },
+    {
+      "label": "test_render_board_multiple_guesses()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L76",
+      "id": "tests_test_game_test_render_board_multiple_guesses",
+      "community": 0,
+      "norm_label": "test_render_board_multiple_guesses()"
+    },
+    {
+      "label": "test_max_guesses_is_six()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L84",
+      "id": "tests_test_game_test_max_guesses_is_six",
+      "community": 0,
+      "norm_label": "test_max_guesses_is_six()"
+    },
+    {
+      "label": "test_storage.py",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L1",
+      "id": "tests_test_storage_py",
+      "community": 9,
+      "norm_label": "test_storage.py"
+    },
+    {
+      "label": "redis_db()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L17",
+      "id": "tests_test_storage_redis_db",
+      "community": 7,
+      "norm_label": "redis_db()"
+    },
+    {
+      "label": "admin_token()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L24",
+      "id": "tests_test_storage_admin_token",
+      "community": 9,
+      "norm_label": "admin_token()"
+    },
+    {
+      "label": "test_create_game()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L32",
+      "id": "tests_test_storage_test_create_game",
+      "community": 9,
+      "norm_label": "test_create_game()"
+    },
+    {
+      "label": "test_get_game_exists()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L42",
+      "id": "tests_test_storage_test_get_game_exists",
+      "community": 4,
+      "norm_label": "test_get_game_exists()"
+    },
+    {
+      "label": "test_get_game_nonexistent()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L50",
+      "id": "tests_test_storage_test_get_game_nonexistent",
+      "community": 4,
+      "norm_label": "test_get_game_nonexistent()"
+    },
+    {
+      "label": "test_archive_game()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L56",
+      "id": "tests_test_storage_test_archive_game",
+      "community": 4,
+      "norm_label": "test_archive_game()"
+    },
+    {
+      "label": "test_archive_game_unarchive()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L65",
+      "id": "tests_test_storage_test_archive_game_unarchive",
+      "community": 4,
+      "norm_label": "test_archive_game_unarchive()"
+    },
+    {
+      "label": "test_archive_game_nonexistent()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L74",
+      "id": "tests_test_storage_test_archive_game_nonexistent",
+      "community": 4,
+      "norm_label": "test_archive_game_nonexistent()"
+    },
+    {
+      "label": "test_list_games_active_only()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L80",
+      "id": "tests_test_storage_test_list_games_active_only",
+      "community": 4,
+      "norm_label": "test_list_games_active_only()"
+    },
+    {
+      "label": "test_list_games_include_archived()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L90",
+      "id": "tests_test_storage_test_list_games_include_archived",
+      "community": 4,
+      "norm_label": "test_list_games_include_archived()"
+    },
+    {
+      "label": "test_create_session()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L102",
+      "id": "tests_test_storage_test_create_session",
+      "community": 8,
+      "norm_label": "test_create_session()"
+    },
+    {
+      "label": "test_create_session_duplicate_returns_existing()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L113",
+      "id": "tests_test_storage_test_create_session_duplicate_returns_existing",
+      "community": 8,
+      "norm_label": "test_create_session_duplicate_returns_existing()"
+    },
+    {
+      "label": "test_get_active_session()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L121",
+      "id": "tests_test_storage_test_get_active_session",
+      "community": 8,
+      "norm_label": "test_get_active_session()"
+    },
+    {
+      "label": "test_get_active_session_none()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L130",
+      "id": "tests_test_storage_test_get_active_session_none",
+      "community": 8,
+      "norm_label": "test_get_active_session_none()"
+    },
+    {
+      "label": "test_add_guess_correct()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L136",
+      "id": "tests_test_storage_test_add_guess_correct",
+      "community": 3,
+      "norm_label": "test_add_guess_correct()"
+    },
+    {
+      "label": "test_add_guess_incorrect()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L148",
+      "id": "tests_test_storage_test_add_guess_incorrect",
+      "community": 3,
+      "norm_label": "test_add_guess_incorrect()"
+    },
+    {
+      "label": "test_add_guess_sixth_guess_wrong_ends_game()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L158",
+      "id": "tests_test_storage_test_add_guess_sixth_guess_wrong_ends_game",
+      "community": 8,
+      "norm_label": "test_add_guess_sixth_guess_wrong_ends_game()"
+    },
+    {
+      "label": "test_add_guess_updates_game_and_player_stats()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L171",
+      "id": "tests_test_storage_test_add_guess_updates_game_and_player_stats",
+      "community": 4,
+      "norm_label": "test_add_guess_updates_game_and_player_stats()"
+    },
+    {
+      "label": "test_add_guess_on_completed_session_raises()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L202",
+      "id": "tests_test_storage_test_add_guess_on_completed_session_raises",
+      "community": 8,
+      "norm_label": "test_add_guess_on_completed_session_raises()"
+    },
+    {
+      "label": "test_decode_hash()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L212",
+      "id": "tests_test_storage_test_decode_hash",
+      "community": 3,
+      "norm_label": "test_decode_hash()"
+    },
+    {
+      "label": "test_add_guess_nonexistent_session()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L219",
+      "id": "tests_test_storage_test_add_guess_nonexistent_session",
+      "community": 3,
+      "norm_label": "test_add_guess_nonexistent_session()"
+    },
+    {
+      "label": "test_get_session_nonexistent()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L225",
+      "id": "tests_test_storage_test_get_session_nonexistent",
+      "community": 9,
+      "norm_label": "test_get_session_nonexistent()"
+    },
+    {
+      "label": "test_list_games_includes_total_guesses_as_int()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L231",
+      "id": "tests_test_storage_test_list_games_includes_total_guesses_as_int",
+      "community": 4,
+      "norm_label": "test_list_games_includes_total_guesses_as_int()"
+    },
+    {
+      "label": "test_get_player_stats_nonexistent()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L248",
+      "id": "tests_test_storage_test_get_player_stats_nonexistent",
+      "community": 10,
+      "norm_label": "test_get_player_stats_nonexistent()"
+    },
+    {
+      "label": "test_get_player_stats_with_games()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L254",
+      "id": "tests_test_storage_test_get_player_stats_with_games",
+      "community": 10,
+      "norm_label": "test_get_player_stats_with_games()"
+    },
+    {
+      "label": "test_get_player_stats_loss_resets_streak()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L280",
+      "id": "tests_test_storage_test_get_player_stats_loss_resets_streak",
+      "community": 10,
+      "norm_label": "test_get_player_stats_loss_resets_streak()"
+    },
+    {
+      "label": "test_get_game_stats()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L307",
+      "id": "tests_test_storage_test_get_game_stats",
+      "community": 9,
+      "norm_label": "test_get_game_stats()"
+    },
+    {
+      "label": "test_get_game_stats_avg_guesses()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L317",
+      "id": "tests_test_storage_test_get_game_stats_avg_guesses",
+      "community": 9,
+      "norm_label": "test_get_game_stats_avg_guesses()"
+    },
+    {
+      "label": "test_get_game_stats_nonexistent()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L342",
+      "id": "tests_test_storage_test_get_game_stats_nonexistent",
+      "community": 9,
+      "norm_label": "test_get_game_stats_nonexistent()"
+    },
+    {
+      "label": "test_get_global_stats_empty()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L348",
+      "id": "tests_test_storage_test_get_global_stats_empty",
+      "community": 3,
+      "norm_label": "test_get_global_stats_empty()"
+    },
+    {
+      "label": "test_get_global_stats_with_data()",
+      "file_type": "code",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L356",
+      "id": "tests_test_storage_test_get_global_stats_with_data",
+      "community": 3,
+      "norm_label": "test_get_global_stats_with_data()"
+    },
+    {
+      "label": "test_server_player.py",
+      "file_type": "code",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L1",
+      "id": "tests_test_server_player_py",
+      "community": 6,
+      "norm_label": "test_server_player.py"
+    },
+    {
+      "label": "redis_db()",
+      "file_type": "code",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L6",
+      "id": "tests_test_server_player_redis_db",
+      "community": 7,
+      "norm_label": "redis_db()"
+    },
+    {
+      "label": "client()",
+      "file_type": "code",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L15",
+      "id": "tests_test_server_player_client",
+      "community": 2,
+      "norm_label": "client()"
+    },
+    {
+      "label": "test_register_player()",
+      "file_type": "code",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L26",
+      "id": "tests_test_server_player_test_register_player",
+      "community": 6,
+      "norm_label": "test_register_player()"
+    },
+    {
+      "label": "test_list_active_games()",
+      "file_type": "code",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L34",
+      "id": "tests_test_server_player_test_list_active_games",
+      "community": 6,
+      "norm_label": "test_list_active_games()"
+    },
+    {
+      "label": "test_list_active_games_excludes_archived()",
+      "file_type": "code",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L44",
+      "id": "tests_test_server_player_test_list_active_games_excludes_archived",
+      "community": 6,
+      "norm_label": "test_list_active_games_excludes_archived()"
+    },
+    {
+      "label": "test_start_game()",
+      "file_type": "code",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L56",
+      "id": "tests_test_server_player_test_start_game",
+      "community": 6,
+      "norm_label": "test_start_game()"
+    },
+    {
+      "label": "test_start_game_invalid_player_token()",
+      "file_type": "code",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L68",
+      "id": "tests_test_server_player_test_start_game_invalid_player_token",
+      "community": 6,
+      "norm_label": "test_start_game_invalid_player_token()"
+    },
+    {
+      "label": "test_make_guess_correct()",
+      "file_type": "code",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L74",
+      "id": "tests_test_server_player_test_make_guess_correct",
+      "community": 6,
+      "norm_label": "test_make_guess_correct()"
+    },
+    {
+      "label": "test_make_guess_incorrect_continues()",
+      "file_type": "code",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L91",
+      "id": "tests_test_server_player_test_make_guess_incorrect_continues",
+      "community": 6,
+      "norm_label": "test_make_guess_incorrect_continues()"
+    },
+    {
+      "label": "test_make_guess_invalid_word_rejected()",
+      "file_type": "code",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L108",
+      "id": "tests_test_server_player_test_make_guess_invalid_word_rejected",
+      "community": 6,
+      "norm_label": "test_make_guess_invalid_word_rejected()"
+    },
+    {
+      "label": "test_make_guess_completed_session_rejected()",
+      "file_type": "code",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L122",
+      "id": "tests_test_server_player_test_make_guess_completed_session_rejected",
+      "community": 6,
+      "norm_label": "test_make_guess_completed_session_rejected()"
+    },
+    {
+      "label": "test_get_my_stats()",
+      "file_type": "code",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L139",
+      "id": "tests_test_server_player_test_get_my_stats",
+      "community": 6,
+      "norm_label": "test_get_my_stats()"
+    },
+    {
+      "label": "test_get_game_result()",
+      "file_type": "code",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L157",
+      "id": "tests_test_server_player_test_get_game_result",
+      "community": 6,
+      "norm_label": "test_get_game_result()"
+    },
+    {
+      "label": "auth.py",
+      "file_type": "code",
+      "source_file": "src/wordle_server/auth.py",
+      "source_location": "L1",
+      "id": "src_wordle_server_auth_py",
+      "community": 1,
+      "norm_label": "auth.py"
+    },
+    {
+      "label": "init_admin_token()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/auth.py",
+      "source_location": "L5",
+      "id": "wordle_server_auth_init_admin_token",
+      "community": 1,
+      "norm_label": "init_admin_token()"
+    },
+    {
+      "label": "validate_admin_token()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/auth.py",
+      "source_location": "L9",
+      "id": "wordle_server_auth_validate_admin_token",
+      "community": 1,
+      "norm_label": "validate_admin_token()"
+    },
+    {
+      "label": "validate_player_token()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/auth.py",
+      "source_location": "L13",
+      "id": "wordle_server_auth_validate_player_token",
+      "community": 1,
+      "norm_label": "validate_player_token()"
+    },
+    {
+      "label": "register_player()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/auth.py",
+      "source_location": "L17",
+      "id": "wordle_server_auth_register_player",
+      "community": 1,
+      "norm_label": "register_player()"
+    },
+    {
+      "label": "create_admin_token()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/auth.py",
+      "source_location": "L38",
+      "id": "wordle_server_auth_create_admin_token",
+      "community": 1,
+      "norm_label": "create_admin_token()"
+    },
+    {
+      "label": "server.py",
+      "file_type": "code",
+      "source_file": "src/wordle_server/server.py",
+      "source_location": "L1",
+      "id": "src_wordle_server_server_py",
+      "community": 2,
+      "norm_label": "server.py"
+    },
+    {
+      "label": "create_server()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/server.py",
+      "source_location": "L7",
+      "id": "wordle_server_server_create_server",
+      "community": 2,
+      "norm_label": "create_server()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/server.py",
+      "source_location": "L166",
+      "id": "wordle_server_server_main",
+      "community": 2,
+      "norm_label": "main()"
+    },
+    {
+      "label": "game.py",
+      "file_type": "code",
+      "source_file": "src/wordle_server/game.py",
+      "source_location": "L1",
+      "id": "src_wordle_server_game_py",
+      "community": 0,
+      "norm_label": "game.py"
+    },
+    {
+      "label": "get_feedback()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/game.py",
+      "source_location": "L24",
+      "id": "wordle_server_game_get_feedback",
+      "community": 0,
+      "norm_label": "get_feedback()"
+    },
+    {
+      "label": "render_board()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/game.py",
+      "source_location": "L46",
+      "id": "wordle_server_game_render_board",
+      "community": 0,
+      "norm_label": "render_board()"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/wordle_server/__init__.py",
+      "source_location": "L1",
+      "id": "src_wordle_server_init_py",
+      "community": 12,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "storage.py",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L1",
+      "id": "src_wordle_server_storage_py",
+      "community": 3,
+      "norm_label": "storage.py"
+    },
+    {
+      "label": "_decode_hash()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L8",
+      "id": "wordle_server_storage_decode_hash",
+      "community": 3,
+      "norm_label": "_decode_hash()"
+    },
+    {
+      "label": "create_game()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L20",
+      "id": "wordle_server_storage_create_game",
+      "community": 4,
+      "norm_label": "create_game()"
+    },
+    {
+      "label": "get_game()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L39",
+      "id": "wordle_server_storage_get_game",
+      "community": 4,
+      "norm_label": "get_game()"
+    },
+    {
+      "label": "archive_game()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L50",
+      "id": "wordle_server_storage_archive_game",
+      "community": 4,
+      "norm_label": "archive_game()"
+    },
+    {
+      "label": "list_games()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L58",
+      "id": "wordle_server_storage_list_games",
+      "community": 4,
+      "norm_label": "list_games()"
+    },
+    {
+      "label": "get_active_session()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L75",
+      "id": "wordle_server_storage_get_active_session",
+      "community": 8,
+      "norm_label": "get_active_session()"
+    },
+    {
+      "label": "create_session()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L84",
+      "id": "wordle_server_storage_create_session",
+      "community": 8,
+      "norm_label": "create_session()"
+    },
+    {
+      "label": "get_session()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L111",
+      "id": "wordle_server_storage_get_session",
+      "community": 3,
+      "norm_label": "get_session()"
+    },
+    {
+      "label": "add_guess()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L124",
+      "id": "wordle_server_storage_add_guess",
+      "community": 3,
+      "norm_label": "add_guess()"
+    },
+    {
+      "label": "_compute_elapsed()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L167",
+      "id": "wordle_server_storage_compute_elapsed",
+      "community": 3,
+      "norm_label": "_compute_elapsed()"
+    },
+    {
+      "label": "_update_player_stats()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L173",
+      "id": "wordle_server_storage_update_player_stats",
+      "community": 3,
+      "norm_label": "_update_player_stats()"
+    },
+    {
+      "label": "get_player_stats()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L217",
+      "id": "wordle_server_storage_get_player_stats",
+      "community": 10,
+      "norm_label": "get_player_stats()"
+    },
+    {
+      "label": "get_game_stats()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L241",
+      "id": "wordle_server_storage_get_game_stats",
+      "community": 9,
+      "norm_label": "get_game_stats()"
+    },
+    {
+      "label": "get_global_stats()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L261",
+      "id": "wordle_server_storage_get_global_stats",
+      "community": 3,
+      "norm_label": "get_global_stats()"
+    },
+    {
+      "label": "words.py",
+      "file_type": "code",
+      "source_file": "src/wordle_server/words.py",
+      "source_location": "L1",
+      "id": "src_wordle_server_words_py",
+      "community": 5,
+      "norm_label": "words.py"
+    },
+    {
+      "label": "_get_word_set()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/words.py",
+      "source_location": "L7",
+      "id": "wordle_server_words_get_word_set",
+      "community": 5,
+      "norm_label": "_get_word_set()"
+    },
+    {
+      "label": "is_valid_word()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/words.py",
+      "source_location": "L15",
+      "id": "wordle_server_words_is_valid_word",
+      "community": 5,
+      "norm_label": "is_valid_word()"
+    },
+    {
+      "label": "pick_random_word()",
+      "file_type": "code",
+      "source_file": "src/wordle_server/words.py",
+      "source_location": "L21",
+      "id": "wordle_server_words_pick_random_word",
+      "community": 5,
+      "norm_label": "pick_random_word()"
+    },
+    {
+      "label": "Small controlled word set for testing.",
+      "file_type": "rationale",
+      "source_file": "tests/conftest.py",
+      "source_location": "L6",
+      "community": 7,
+      "norm_label": "small controlled word set for testing.",
+      "id": "tests_conftest_rationale_6"
+    },
+    {
+      "label": "test_render_board_single_guess()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L49",
+      "community": 0,
+      "norm_label": "test_render_board_single_guess()",
+      "id": "tests_test_game_test_render_board_single_guess"
+    },
+    {
+      "label": "test_render_board_mixed_feedback()",
+      "file_type": "code",
+      "source_file": "tests/test_game.py",
+      "source_location": "L57",
+      "community": 0,
+      "norm_label": "test_render_board_mixed_feedback()",
+      "id": "tests_test_game_test_render_board_mixed_feedback"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/conftest.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_conftest_py",
+      "target": "tests_conftest_fake_redis"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/conftest.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_conftest_py",
+      "target": "tests_conftest_sample_words"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_auth.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "tests_test_auth_clean_redis",
+      "target": "tests_conftest_fake_redis"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tests_test_server_admin_redis_db",
+      "target": "tests_conftest_fake_redis"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "tests_test_storage_redis_db",
+      "target": "tests_conftest_fake_redis"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tests_test_server_player_redis_db",
+      "target": "tests_conftest_fake_redis"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/conftest.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_conftest_rationale_12",
+      "target": "tests_conftest_sample_words"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/conftest.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_conftest_rationale_6",
+      "target": "tests_conftest_sample_words"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_words.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_words_py",
+      "target": "tests_test_words_test_get_word_set_returns_five_letter_uppercase"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_words.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_words_py",
+      "target": "tests_test_words_test_is_valid_word_accepts_valid_word"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_words.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_words_py",
+      "target": "tests_test_words_test_is_valid_word_rejects_wrong_length"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_words.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_words_py",
+      "target": "tests_test_words_test_is_valid_word_rejects_non_alpha"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_words.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_words_py",
+      "target": "tests_test_words_test_is_valid_word_rejects_not_in_set"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_words.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_words_py",
+      "target": "tests_test_words_test_pick_random_word_returns_from_set"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_words.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_words_py",
+      "target": "tests_test_words_test_pick_random_word_handles_single_word_set"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_words.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "tests_test_words_test_get_word_set_returns_five_letter_uppercase",
+      "target": "wordle_server_words_get_word_set"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_words.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "tests_test_words_test_is_valid_word_accepts_valid_word",
+      "target": "wordle_server_words_is_valid_word"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_words.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "tests_test_words_test_is_valid_word_rejects_wrong_length",
+      "target": "wordle_server_words_is_valid_word"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_words.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "tests_test_words_test_is_valid_word_rejects_non_alpha",
+      "target": "wordle_server_words_is_valid_word"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_words.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "tests_test_words_test_is_valid_word_rejects_not_in_set",
+      "target": "wordle_server_words_is_valid_word"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_words.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "tests_test_words_test_pick_random_word_returns_from_set",
+      "target": "wordle_server_words_pick_random_word"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_words.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "tests_test_words_test_pick_random_word_handles_single_word_set",
+      "target": "wordle_server_words_pick_random_word"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_auth_py",
+      "target": "tests_test_auth_clean_redis"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_auth_py",
+      "target": "tests_test_auth_test_init_admin_token"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_auth_py",
+      "target": "tests_test_auth_test_validate_admin_token_valid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_auth_py",
+      "target": "tests_test_auth_test_validate_admin_token_invalid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_auth_py",
+      "target": "tests_test_auth_test_validate_player_token_valid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_auth_py",
+      "target": "tests_test_auth_test_validate_player_token_invalid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_auth_py",
+      "target": "tests_test_auth_test_register_player_creates_token"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_auth.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_auth_py",
+      "target": "tests_test_auth_test_create_admin_token"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_auth.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "tests_test_auth_test_init_admin_token",
+      "target": "wordle_server_auth_init_admin_token"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_auth.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "tests_test_auth_test_validate_admin_token_valid",
+      "target": "wordle_server_auth_validate_admin_token"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_auth.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "tests_test_auth_test_validate_admin_token_invalid",
+      "target": "wordle_server_auth_validate_admin_token"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_auth.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "tests_test_auth_test_validate_player_token_valid",
+      "target": "wordle_server_auth_validate_player_token"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_auth.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "tests_test_auth_test_validate_player_token_invalid",
+      "target": "wordle_server_auth_validate_player_token"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_auth.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "tests_test_auth_test_register_player_creates_token",
+      "target": "wordle_server_auth_register_player"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_auth.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "tests_test_auth_test_create_admin_token",
+      "target": "wordle_server_auth_create_admin_token"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_admin_py",
+      "target": "tests_test_server_admin_redis_db"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_admin_py",
+      "target": "tests_test_server_admin_client"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_admin_py",
+      "target": "tests_test_server_admin_test_create_game_random_word"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_admin_py",
+      "target": "tests_test_server_admin_test_create_game_specific_word"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_admin_py",
+      "target": "tests_test_server_admin_test_create_game_invalid_admin_token"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_admin_py",
+      "target": "tests_test_server_admin_test_archive_game"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_admin_py",
+      "target": "tests_test_server_admin_test_create_admin_token"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_admin_py",
+      "target": "tests_test_server_admin_test_list_games"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_admin_py",
+      "target": "tests_test_server_admin_test_get_game_stats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_admin_py",
+      "target": "tests_test_server_admin_test_get_global_stats"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_server_admin.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "tests_test_server_admin_client",
+      "target": "wordle_server_server_create_server"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_get_feedback_all_correct"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_get_feedback_all_wrong"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_get_feedback_partial_match"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_get_feedback_duplicate_letters_in_guess"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_get_feedback_duplicate_letters_in_target"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_get_feedback_duplicate_match_priority"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_get_feedback_case_insensitive"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_render_board_all_green"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_render_board_all_white"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_render_board_mixed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_render_board_empty_guesses"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_render_board_multiple_guesses"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_max_guesses_is_six"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_render_board_single_guess"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_game.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_game_py",
+      "target": "tests_test_game_test_render_board_mixed_feedback"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_game.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tests_test_game_test_get_feedback_all_correct",
+      "target": "wordle_server_game_get_feedback"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_game.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tests_test_game_test_get_feedback_all_wrong",
+      "target": "wordle_server_game_get_feedback"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_game.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "tests_test_game_test_get_feedback_partial_match",
+      "target": "wordle_server_game_get_feedback"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_game.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "tests_test_game_test_get_feedback_duplicate_letters_in_guess",
+      "target": "wordle_server_game_get_feedback"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_game.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "tests_test_game_test_get_feedback_duplicate_letters_in_target",
+      "target": "wordle_server_game_get_feedback"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_game.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "tests_test_game_test_get_feedback_duplicate_match_priority",
+      "target": "wordle_server_game_get_feedback"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_game.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "tests_test_game_test_get_feedback_case_insensitive",
+      "target": "wordle_server_game_get_feedback"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_game.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "tests_test_game_test_render_board_all_green",
+      "target": "wordle_server_game_render_board"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_game.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "tests_test_game_test_render_board_all_white",
+      "target": "wordle_server_game_render_board"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_game.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "tests_test_game_test_render_board_mixed",
+      "target": "wordle_server_game_render_board"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_game.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "tests_test_game_test_render_board_empty_guesses",
+      "target": "wordle_server_game_render_board"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_game.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "tests_test_game_test_render_board_multiple_guesses",
+      "target": "wordle_server_game_render_board"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_redis_db"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_admin_token"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_create_game"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_get_game_exists"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_get_game_nonexistent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_archive_game"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_archive_game_unarchive"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_archive_game_nonexistent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_list_games_active_only"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_list_games_include_archived"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_create_session"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_create_session_duplicate_returns_existing"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_get_active_session"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_get_active_session_none"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_add_guess_correct"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L148",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_add_guess_incorrect"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L158",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_add_guess_sixth_guess_wrong_ends_game"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L171",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_add_guess_updates_game_and_player_stats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L202",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_add_guess_on_completed_session_raises"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L212",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_decode_hash"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L219",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_add_guess_nonexistent_session"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L225",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_get_session_nonexistent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L231",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_list_games_includes_total_guesses_as_int"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L248",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_get_player_stats_nonexistent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L254",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_get_player_stats_with_games"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L280",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_get_player_stats_loss_resets_streak"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L307",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_get_game_stats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L317",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_get_game_stats_avg_guesses"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L317",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_get_game_stats_nonexistent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L323",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_get_global_stats_empty"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_storage.py",
+      "source_location": "L331",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_storage_py",
+      "target": "tests_test_storage_test_get_global_stats_with_data"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_create_game",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_game_exists",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_game_exists",
+      "target": "wordle_server_storage_get_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_game_nonexistent",
+      "target": "wordle_server_storage_get_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_archive_game",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_archive_game",
+      "target": "wordle_server_storage_archive_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_archive_game",
+      "target": "wordle_server_storage_get_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_archive_game_unarchive",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_archive_game_unarchive",
+      "target": "wordle_server_storage_archive_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_archive_game_unarchive",
+      "target": "wordle_server_storage_get_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_archive_game_nonexistent",
+      "target": "wordle_server_storage_archive_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_list_games_active_only",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_list_games_active_only",
+      "target": "wordle_server_storage_archive_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_list_games_active_only",
+      "target": "wordle_server_storage_list_games"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_list_games_include_archived",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_list_games_include_archived",
+      "target": "wordle_server_storage_archive_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_list_games_include_archived",
+      "target": "wordle_server_storage_list_games"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_create_session",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_create_session",
+      "target": "wordle_server_storage_create_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_create_session_duplicate_returns_existing",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_create_session_duplicate_returns_existing",
+      "target": "wordle_server_storage_create_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_active_session",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_active_session",
+      "target": "wordle_server_storage_create_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_active_session",
+      "target": "wordle_server_storage_get_active_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_active_session_none",
+      "target": "wordle_server_storage_get_active_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_correct",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_correct",
+      "target": "wordle_server_storage_create_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_correct",
+      "target": "wordle_server_storage_add_guess"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_incorrect",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_incorrect",
+      "target": "wordle_server_storage_create_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_incorrect",
+      "target": "wordle_server_storage_add_guess"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_sixth_guess_wrong_ends_game",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_sixth_guess_wrong_ends_game",
+      "target": "wordle_server_storage_create_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_sixth_guess_wrong_ends_game",
+      "target": "wordle_server_storage_add_guess"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L172",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_updates_game_and_player_stats",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_updates_game_and_player_stats",
+      "target": "wordle_server_storage_create_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L188",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_updates_game_and_player_stats",
+      "target": "wordle_server_storage_add_guess"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_updates_game_and_player_stats",
+      "target": "wordle_server_storage_get_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L204",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_on_completed_session_raises",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L205",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_on_completed_session_raises",
+      "target": "wordle_server_storage_create_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L206",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_on_completed_session_raises",
+      "target": "wordle_server_storage_add_guess"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L214",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_decode_hash",
+      "target": "wordle_server_storage_decode_hash"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L221",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_add_guess_nonexistent_session",
+      "target": "wordle_server_storage_add_guess"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L226",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_session_nonexistent",
+      "target": "wordle_server_storage_get_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L232",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_list_games_includes_total_guesses_as_int",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L233",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_list_games_includes_total_guesses_as_int",
+      "target": "wordle_server_storage_list_games"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L249",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_player_stats_nonexistent",
+      "target": "wordle_server_storage_get_player_stats"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L265",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_player_stats_with_games",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_player_stats_with_games",
+      "target": "wordle_server_storage_create_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L267",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_player_stats_with_games",
+      "target": "wordle_server_storage_add_guess"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L269",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_player_stats_with_games",
+      "target": "wordle_server_storage_get_player_stats"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L290",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_player_stats_loss_resets_streak",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L292",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_player_stats_loss_resets_streak",
+      "target": "wordle_server_storage_create_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L293",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_player_stats_loss_resets_streak",
+      "target": "wordle_server_storage_add_guess"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L299",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_player_stats_loss_resets_streak",
+      "target": "wordle_server_storage_get_player_stats"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L308",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_game_stats",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L309",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_game_stats",
+      "target": "wordle_server_storage_get_game_stats"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L327",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_game_stats_avg_guesses",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L329",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_game_stats_avg_guesses",
+      "target": "wordle_server_storage_create_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L330",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_game_stats_avg_guesses",
+      "target": "wordle_server_storage_add_guess"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L336",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_game_stats_avg_guesses",
+      "target": "wordle_server_storage_get_game_stats"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L318",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_game_stats_nonexistent",
+      "target": "wordle_server_storage_get_game_stats"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L324",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_global_stats_empty",
+      "target": "wordle_server_storage_get_global_stats"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L341",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_global_stats_with_data",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L342",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_global_stats_with_data",
+      "target": "wordle_server_storage_create_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L343",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_global_stats_with_data",
+      "target": "wordle_server_storage_add_guess"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_storage.py",
+      "source_location": "L345",
+      "weight": 1.0,
+      "source": "tests_test_storage_test_get_global_stats_with_data",
+      "target": "wordle_server_storage_get_global_stats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_player_py",
+      "target": "tests_test_server_player_redis_db"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_player_py",
+      "target": "tests_test_server_player_client"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_player_py",
+      "target": "tests_test_server_player_test_register_player"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_player_py",
+      "target": "tests_test_server_player_test_list_active_games"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_player_py",
+      "target": "tests_test_server_player_test_list_active_games_excludes_archived"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_player_py",
+      "target": "tests_test_server_player_test_start_game"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_player_py",
+      "target": "tests_test_server_player_test_start_game_invalid_player_token"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_player_py",
+      "target": "tests_test_server_player_test_make_guess_correct"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_player_py",
+      "target": "tests_test_server_player_test_make_guess_incorrect_continues"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_player_py",
+      "target": "tests_test_server_player_test_make_guess_invalid_word_rejected"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_player_py",
+      "target": "tests_test_server_player_test_make_guess_completed_session_rejected"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_player_py",
+      "target": "tests_test_server_player_test_get_my_stats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L157",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_server_player_py",
+      "target": "tests_test_server_player_test_get_game_result"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_server_player.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "tests_test_server_player_client",
+      "target": "wordle_server_server_create_server"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/auth.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_auth_py",
+      "target": "wordle_server_auth_init_admin_token"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/auth.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_auth_py",
+      "target": "wordle_server_auth_validate_admin_token"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/auth.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_auth_py",
+      "target": "wordle_server_auth_validate_player_token"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/auth.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_auth_py",
+      "target": "wordle_server_auth_register_player"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/auth.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_auth_py",
+      "target": "wordle_server_auth_create_admin_token"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/server.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_server_py",
+      "target": "wordle_server_server_create_server"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/server.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_server_py",
+      "target": "wordle_server_server_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/server.py",
+      "source_location": "L177",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_server_main",
+      "target": "wordle_server_server_create_server"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/game.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_game_py",
+      "target": "wordle_server_game_get_feedback"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/game.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_game_py",
+      "target": "wordle_server_game_render_board"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/game.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_game_render_board",
+      "target": "wordle_server_game_get_feedback"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_game.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "tests_test_game_test_render_board_single_guess",
+      "target": "wordle_server_game_render_board"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_game.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "tests_test_game_test_render_board_mixed_feedback",
+      "target": "wordle_server_game_render_board"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_storage_py",
+      "target": "wordle_server_storage_decode_hash"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_storage_py",
+      "target": "wordle_server_storage_create_game"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_storage_py",
+      "target": "wordle_server_storage_get_game"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_storage_py",
+      "target": "wordle_server_storage_archive_game"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_storage_py",
+      "target": "wordle_server_storage_list_games"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_storage_py",
+      "target": "wordle_server_storage_get_active_session"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_storage_py",
+      "target": "wordle_server_storage_create_session"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_storage_py",
+      "target": "wordle_server_storage_get_session"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_storage_py",
+      "target": "wordle_server_storage_add_guess"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L167",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_storage_py",
+      "target": "wordle_server_storage_compute_elapsed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L173",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_storage_py",
+      "target": "wordle_server_storage_update_player_stats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L217",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_storage_py",
+      "target": "wordle_server_storage_get_player_stats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L241",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_storage_py",
+      "target": "wordle_server_storage_get_game_stats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L260",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_storage_py",
+      "target": "wordle_server_storage_get_global_stats"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_storage_get_game",
+      "target": "wordle_server_storage_decode_hash"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_storage_list_games",
+      "target": "wordle_server_storage_decode_hash"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_storage_get_session",
+      "target": "wordle_server_storage_decode_hash"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L181",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_storage_update_player_stats",
+      "target": "wordle_server_storage_decode_hash"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L222",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_storage_get_player_stats",
+      "target": "wordle_server_storage_decode_hash"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L270",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_storage_get_global_stats",
+      "target": "wordle_server_storage_decode_hash"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_storage_create_game",
+      "target": "wordle_server_storage_get_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L242",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_storage_get_game_stats",
+      "target": "wordle_server_storage_get_game"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_storage_get_active_session",
+      "target": "wordle_server_storage_get_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_storage_create_session",
+      "target": "wordle_server_storage_get_active_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_storage_create_session",
+      "target": "wordle_server_storage_get_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L125",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_storage_add_guess",
+      "target": "wordle_server_storage_get_session"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L151",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_storage_add_guess",
+      "target": "wordle_server_storage_compute_elapsed"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/storage.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_storage_add_guess",
+      "target": "wordle_server_storage_update_player_stats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/words.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_words_py",
+      "target": "wordle_server_words_get_word_set"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/words.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_words_py",
+      "target": "wordle_server_words_is_valid_word"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/words.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_wordle_server_words_py",
+      "target": "wordle_server_words_pick_random_word"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/words.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_words_is_valid_word",
+      "target": "wordle_server_words_get_word_set"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/wordle_server/words.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wordle_server_words_pick_random_word",
+      "target": "wordle_server_words_get_word_set"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "546db7982aa28049f274944f9c98dab12b4c445e"
+}
