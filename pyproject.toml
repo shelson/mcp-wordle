@@ -1,0 +1,21 @@
+[project]
+name = "mcp-wordle"
+version = "0.1.0"
+description = "Wordle gameplay via MCP"
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=2.0.0",
+    "redis[hiredis]>=5.0.0",
+    "english-words>=2.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.25.0",
+    "fakeredis[lua]>=2.26.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
