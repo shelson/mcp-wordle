@@ -22,6 +22,8 @@ COLOR_EMOJI = {
 
 
 def get_feedback(guess: str, target: str) -> list[FeedbackColor]:
+    if len(guess) != 5 or len(target) != 5:
+        raise ValueError(f"Both guess and target must be 5 letters, got {len(guess)} and {len(target)}")
     guess = guess.upper()
     target = target.upper()
     result: list[FeedbackColor] = ["white"] * 5

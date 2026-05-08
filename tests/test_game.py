@@ -46,18 +46,31 @@ def test_get_feedback_case_insensitive():
 
 # --- render_board ---
 
-def test_render_board_single_guess():
+def test_render_board_all_green():
     board = render_board(["SLATE"], "SLATE")
-    assert "\033[32m" in board  # green ANSI
-    assert "S" in board
-    assert "L" in board
-    assert "\033[0m" in board  # reset
+    expected = "\033[32mS\033[0m \033[32mL\033[0m \033[32mA\033[0m \033[32mT\033[0m \033[32mE\033[0m 🟩 🟩 🟩 🟩 🟩"
+    assert board.strip() == expected
 
 
-def test_render_board_mixed_feedback():
-    board = render_board(["SLATE"], "STARE")
-    lines = board.strip().split("\n")
-    assert len(lines) == 1
+def test_render_board_all_white():
+    board = render_board(["ABCDE"], "FGHIJ")
+    expected = "A B C D E ⬜ ⬜ ⬜ ⬜ ⬜"
+    assert board.strip() == expected
+
+
+def test_render_board_mixed():
+    board = render_board(["SLATE"], "STALE")
+    # greens at 0,2,4 (S,A,E); yellows at 1,3 (L,T)
+    assert "\033[32mS\033[0m" in board
+    assert "\033[32mA\033[0m" in board
+    assert "\033[32mE\033[0m" in board
+    assert "\033[33mL\033[0m" in board
+    assert "\033[33mT\033[0m" in board
+
+
+def test_render_board_empty_guesses():
+    board = render_board([], "SLATE")
+    assert board == ""
 
 
 def test_render_board_multiple_guesses():
