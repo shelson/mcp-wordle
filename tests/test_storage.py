@@ -213,3 +213,23 @@ async def test_decode_hash():
     raw = {b"key1": b"value1", b"num": b"5"}
     result = _decode_hash(raw)
     assert result == {"key1": "value1", "num": "5"}
+
+
+@pytest.mark.asyncio
+async def test_add_guess_nonexistent_session(redis_db):
+    with pytest.raises(ValueError, match="Session not found"):
+        await add_guess(redis_db, "fake-session-id", "SLATE", "SLATE")
+
+
+@pytest.mark.asyncio
+async def test_get_session_nonexistent(redis_db):
+    result = await get_session(redis_db, "fake-session-id")
+    assert result is None
+
+
+@pytest.mark.asyncio
+async def test_list_games_includes_total_guesses_as_int(redis_db, admin_token):
+    game = await create_game(redis_db, "SLATE", admin_token)
+    games = await list_games(redis_db, include_archived=True)
+    assert isinstance(games[0]["total_guesses"], int)
+    assert games[0]["total_guesses"] == 0

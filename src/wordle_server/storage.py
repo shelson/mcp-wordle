@@ -2,6 +2,8 @@ import uuid
 import json
 from datetime import datetime, timezone
 
+from src.wordle_server.game import MAX_GUESSES
+
 
 def _decode_hash(data: dict) -> dict:
     result = {}
@@ -61,6 +63,7 @@ async def list_games(redis, include_archived: bool = False) -> list[dict]:
             game = _decode_hash(data)
             game["play_count"] = int(game.get("play_count", 0))
             game["win_count"] = int(game.get("win_count", 0))
+            game["total_guesses"] = int(game.get("total_guesses", 0))
             if include_archived or game.get("status") == "active":
                 games.append(game)
     return games
@@ -119,8 +122,6 @@ async def get_session(redis, session_id: str) -> dict | None:
 
 
 async def add_guess(redis, session_id: str, guess: str, target: str) -> tuple[dict, bool]:
-    from src.wordle_server.game import MAX_GUESSES
-
     session = await get_session(redis, session_id)
     if session is None:
         raise ValueError("Session not found")
