@@ -1,0 +1,78 @@
+{
+  "/Users/simon/git/mcp-wordle/tests/conftest.py": {
+    "mtime": 1778222721.432181,
+    "hash": "f5af2faa8f7ba68f9bf0262d21b2c8fa"
+  },
+  "/Users/simon/git/mcp-wordle/tests/test_words.py": {
+    "mtime": 1778225050.6373599,
+    "hash": "1267c96f4933dce39a0c962cf7a72acc"
+  },
+  "/Users/simon/git/mcp-wordle/tests/test_auth.py": {
+    "mtime": 1778225044.609959,
+    "hash": "d68c08494081c314144ecc7382868519"
+  },
+  "/Users/simon/git/mcp-wordle/tests/test_server_admin.py": {
+    "mtime": 1778225038.6970613,
+    "hash": "4b048cc6525215562fa6c55b44b2e4af"
+  },
+  "/Users/simon/git/mcp-wordle/tests/__init__.py": {
+    "mtime": 1778221741.9120953,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/simon/git/mcp-wordle/tests/test_game.py": {
+    "mtime": 1778225047.991188,
+    "hash": "90fb44306df93b29e7ab93924955fd38"
+  },
+  "/Users/simon/git/mcp-wordle/tests/test_storage.py": {
+    "mtime": 1778225041.921733,
+    "hash": "2388dc26a48af49e6b10f28d994c5634"
+  },
+  "/Users/simon/git/mcp-wordle/tests/test_server_player.py": {
+    "mtime": 1778225035.961304,
+    "hash": "8e38c4b83590f8edb1d3837f68b6fa47"
+  },
+  "/Users/simon/git/mcp-wordle/src/wordle_server/auth.py": {
+    "mtime": 1778222754.094285,
+    "hash": "233a134725d1e4e119084f96ec913d0a"
+  },
+  "/Users/simon/git/mcp-wordle/src/wordle_server/server.py": {
+    "mtime": 1778225030.2580752,
+    "hash": "52d0e439ab62286330b11582dbbce528"
+  },
+  "/Users/simon/git/mcp-wordle/src/wordle_server/game.py": {
+    "mtime": 1778222508.7605288,
+    "hash": "a84fa9a415e0606ae979cc69a754390d"
+  },
+  "/Users/simon/git/mcp-wordle/src/wordle_server/__init__.py": {
+    "mtime": 1778221740.2610252,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/simon/git/mcp-wordle/src/wordle_server/storage.py": {
+    "mtime": 1778225033.317263,
+    "hash": "67f06d6d063126ef1f5ec2f64ff7f509"
+  },
+  "/Users/simon/git/mcp-wordle/src/wordle_server/words.py": {
+    "mtime": 1778221786.2680728,
+    "hash": "9ccaddfab206c02263288d1dd2631862"
+  },
+  "/Users/simon/git/mcp-wordle/README.md": {
+    "mtime": 1778217329.4712179,
+    "hash": "7466fba97197bfa061102b0b1d9ed1c4"
+  },
+  "/Users/simon/git/mcp-wordle/docker-compose.yml": {
+    "mtime": 1778224801.8169258,
+    "hash": "073121e8052c6e02b8a848d6c2378c31"
+  },
+  "/Users/simon/git/mcp-wordle/AGENTS.md": {
+    "mtime": 1778221243.616102,
+    "hash": "d633775d4a0166dff86f1a367d98ecc9"
+  },
+  "/Users/simon/git/mcp-wordle/docs/superpowers/plans/2026-05-08-wordle-mcp-server-plan.md": {
+    "mtime": 1778221185.0225282,
+    "hash": "996acc929914e3de2ab1494046085821"
+  },
+  "/Users/simon/git/mcp-wordle/docs/superpowers/specs/2026-05-08-wordle-mcp-server-design.md": {
+    "mtime": 1778220442.5726583,
+    "hash": "72d65919cc8958e6816933db73cd215c"
+  }
+}
