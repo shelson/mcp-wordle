@@ -49,8 +49,8 @@ All admin tools require an `admin_token: str` parameter. Reject calls with inval
 | `list_active_games` | `player_token: str` → `[{game_id, status, play_count}]` | Token | List playable games (active only) |
 | `start_game` | `game_id: str, player_token: str` → `{session_id, game_id}` | Token | Begin new game session. Returns session_id |
 | `make_guess` | `session_id: str, guess: str, player_token: str` → `{session_id, guess_num, board: str, is_complete: bool, is_won: bool, message: str}` | Token | Submit 5-letter guess. Returns ANSI-colored board of all guesses so far. Rejects invalid words or already-completed sessions |
-| `get_my_stats` | `player_token: str` → `{games_played, games_won, win_rate, current_streak, max_streak, guess_distribution}` | Token | Player's personal stats |
-| `get_game_result` | `session_id: str, player_token: str` → `{game_id, word, guesses, is_won, guess_count}` | Token | Result of a specific session |
+| `get_my_stats` | `player_token: str` → `{games_played, games_won, win_rate, current_streak, max_streak, total_solve_time, avg_solve_time, guess_distribution}` | Token | Player's personal stats including timing |
+| `get_game_result` | `session_id: str, player_token: str` → `{game_id, word, guesses, is_won, guess_count, elapsed_seconds}` | Token | Result of a specific session |
 
 ## Game Rules
 
@@ -62,6 +62,7 @@ Standard Wordle rules:
 - Win if guess matches target word exactly
 - Invalid words (not in word list) are rejected and do NOT count toward the 6-guess limit
 - Starting a game the player already has an active session for returns the existing session (no duplicates)
+- Game timing: `started_at` recorded on session creation, `completed_at` recorded when game ends (win or loss on 6th guess). `elapsed_seconds` computed from the two timestamps. Only wins contribute to player solve-time stats.
 
 ### Board Rendering
 
@@ -85,6 +86,7 @@ admin_tokens              → Set<str>                        {"abc-123-admin", 
 players:{token}           → Hash {
     token, created_at, games_played, games_won,
     total_guesses, current_streak, max_streak,
+    total_solve_time (float, seconds), avg_solve_time (float),
     guess_dist (JSON: {"1":2,"2":5,"3":3,...})
 }
 
@@ -95,8 +97,10 @@ games:{game_id}           → Hash {
 
 sessions:{session_id}    → Hash {
     session_id, game_id, player_token, started_at,
+    completed_at (ISO timestamp, set only when game ends),
     guesses (JSON: ["SLATE","CRANE",...]),
-    is_complete, is_won, guess_count
+    is_complete, is_won, guess_count,
+    elapsed_seconds (float, set on win)
 }
 
 player_sessions:{token}  → Set<str>                        session IDs for player
