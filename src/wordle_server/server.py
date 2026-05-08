@@ -163,21 +163,27 @@ def create_server(r: redis.Redis) -> FastMCP:
     return mcp
 
 
-async def main():
+def main():
     import os
+    import asyncio
 
     redis_url = os.environ.get("REDIS_URL", "redis://localhost:6379/0")
     port = int(os.environ.get("MCP_PORT", "8000"))
     admin_token = os.environ.get("ADMIN_TOKEN", "")
 
-    r = redis.from_url(redis_url, decode_responses=True)
-    if admin_token:
-        await auth.init_admin_token(r, admin_token)
+    async def _setup():
+        r = redis.from_url(redis_url, decode_responses=True)
+        if admin_token:
+            await auth.init_admin_token(r, admin_token)
+        return r
+
+    loop = asyncio.new_event_loop()
+    r = loop.run_until_complete(_setup())
+    loop.close()
 
     mcp = create_server(r)
     mcp.run(transport="http", host="0.0.0.0", port=port)
 
 
 if __name__ == "__main__":
-    import asyncio
-    asyncio.run(main())
+    main()
