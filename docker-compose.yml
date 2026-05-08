@@ -1,0 +1,20 @@
+services:
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - ./data/redis:/data
+    command: redis-server --appendonly yes
+    ports:
+      - "6379:6379"
+
+  wordle-server:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - ADMIN_TOKEN=${ADMIN_TOKEN:-admin-dev-token}
+      - MCP_PORT=8000
+      - MCP_TRANSPORT=http
+    depends_on:
+      - redis
