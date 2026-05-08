@@ -233,3 +233,116 @@ async def test_list_games_includes_total_guesses_as_int(redis_db, admin_token):
     games = await list_games(redis_db, include_archived=True)
     assert isinstance(games[0]["total_guesses"], int)
     assert games[0]["total_guesses"] == 0
+
+
+# --- Stats queries ---
+
+from src.wordle_server.storage import (
+    get_player_stats,
+    get_game_stats,
+    get_global_stats,
+)
+
+
+@pytest.mark.asyncio
+async def test_get_player_stats_nonexistent(redis_db):
+    result = await get_player_stats(redis_db, "nonexistent")
+    assert result is None
+
+
+@pytest.mark.asyncio
+async def test_get_player_stats_with_games(redis_db, admin_token):
+    # Need a registered player for stats to work
+    await redis_db.hset(
+        "players:player-1",
+        mapping={
+            "token": "player-1", "created_at": "2024-01-01T00:00:00",
+            "games_played": "0", "games_won": "0", "total_guesses": "0",
+            "current_streak": "0", "max_streak": "0",
+            "total_solve_time": "0.0", "avg_solve_time": "0.0", "guess_dist": "{}"
+        },
+    )
+    game = await create_game(redis_db, "SLATE", admin_token)
+    session = await create_session(redis_db, game["game_id"], "player-1")
+    await add_guess(redis_db, session["session_id"], "SLATE", "SLATE")
+
+    stats = await get_player_stats(redis_db, "player-1")
+    assert stats is not None
+    assert stats["games_played"] == 1
+    assert stats["games_won"] == 1
+    assert stats["win_rate"] == 100.0
+    assert stats["current_streak"] == 1
+    assert stats["max_streak"] == 1
+    assert "1" in stats["guess_distribution"]
+
+
+@pytest.mark.asyncio
+async def test_get_player_stats_loss_resets_streak(redis_db, admin_token):
+    await redis_db.hset(
+        "players:player-2",
+        mapping={
+            "token": "player-2", "created_at": "2024-01-01T00:00:00",
+            "games_played": "0", "games_won": "0", "total_guesses": "0",
+            "current_streak": "0", "max_streak": "0",
+            "total_solve_time": "0.0", "avg_solve_time": "0.0", "guess_dist": "{}"
+        },
+    )
+    game = await create_game(redis_db, "SLATE", admin_token)
+    # Win first game
+    s1 = await create_session(redis_db, game["game_id"], "player-2")
+    await add_guess(redis_db, s1["session_id"], "SLATE", "SLATE")
+    # Lose second game
+    s2 = await create_session(redis_db, game["game_id"], "player-2")
+    for word in ["CRANE", "ADIEU", "AUDIO", "STARE", "RAISE", "SPLIT"]:
+        await add_guess(redis_db, s2["session_id"], word, "SLATE")
+
+    stats = await get_player_stats(redis_db, "player-2")
+    assert stats["current_streak"] == 0
+    assert stats["max_streak"] == 1
+    assert stats["games_played"] == 2
+    assert stats["games_won"] == 1
+
+
+@pytest.mark.asyncio
+async def test_get_game_stats(redis_db, admin_token):
+    game = await create_game(redis_db, "SLATE", admin_token)
+    stats = await get_game_stats(redis_db, game["game_id"])
+    assert stats is not None
+    assert stats["word"] == "SLATE"
+    assert stats["play_count"] == 0
+    assert stats["win_count"] == 0
+
+
+@pytest.mark.asyncio
+async def test_get_game_stats_nonexistent(redis_db):
+    result = await get_game_stats(redis_db, "nope")
+    assert result is None
+
+
+@pytest.mark.asyncio
+async def test_get_global_stats_empty(redis_db):
+    stats = await get_global_stats(redis_db)
+    assert stats["total_games"] == 0
+    assert stats["total_players"] == 0
+    assert stats["total_plays"] == 0
+
+
+@pytest.mark.asyncio
+async def test_get_global_stats_with_data(redis_db, admin_token):
+    await redis_db.hset(
+        "players:player-3",
+        mapping={
+            "token": "player-3", "created_at": "2024-01-01T00:00:00",
+            "games_played": "0", "games_won": "0", "total_guesses": "0",
+            "current_streak": "0", "max_streak": "0",
+            "total_solve_time": "0.0", "avg_solve_time": "0.0", "guess_dist": "{}"
+        },
+    )
+    game = await create_game(redis_db, "SLATE", admin_token)
+    session = await create_session(redis_db, game["game_id"], "player-3")
+    await add_guess(redis_db, session["session_id"], "SLATE", "SLATE")
+
+    stats = await get_global_stats(redis_db)
+    assert stats["total_games"] >= 1
+    assert stats["total_plays"] == 1
+    assert stats["overall_win_rate"] == 100.0

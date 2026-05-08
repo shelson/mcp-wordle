@@ -158,6 +158,7 @@ async def add_guess(redis, session_id: str, guess: str, target: str) -> tuple[di
             await redis.hincrby(f"games:{session['game_id']}", "win_count", 1)
 
         await _update_player_stats(redis, session["player_token"], is_correct, len(guesses), elapsed)
+        await redis.delete(f"active_session:{session['game_id']}:{session['player_token']}")
 
     session = await get_session(redis, session_id)
     return session, is_correct
@@ -208,3 +209,76 @@ async def _update_player_stats(
         updates["current_streak"] = "0"
 
     await redis.hset(key, mapping=updates)
+
+
+# --- Stats queries ---
+
+
+async def get_player_stats(redis, player_token: str) -> dict | None:
+    data = await redis.hgetall(f"players:{player_token}")
+    if not data:
+        return None
+
+    player = _decode_hash(data)
+    games_played = int(player.get("games_played", 0))
+    games_won = int(player.get("games_won", 0))
+    win_rate = round((games_won / games_played * 100), 1) if games_played > 0 else 0.0
+
+    return {
+        "token": player.get("token"),
+        "created_at": player.get("created_at"),
+        "games_played": games_played,
+        "games_won": games_won,
+        "win_rate": win_rate,
+        "current_streak": int(player.get("current_streak", 0)),
+        "max_streak": int(player.get("max_streak", 0)),
+        "total_solve_time": float(player.get("total_solve_time", 0)),
+        "avg_solve_time": float(player.get("avg_solve_time", 0)),
+        "guess_distribution": json.loads(player.get("guess_dist", "{}")),
+    }
+
+
+async def get_game_stats(redis, game_id: str) -> dict | None:
+    game = await get_game(redis, game_id)
+    if game is None:
+        return None
+
+    win_count = game["win_count"]
+    total_guesses = game["total_guesses"]
+    avg_guesses = round((total_guesses / win_count), 1) if win_count > 0 else 0.0
+
+    return {
+        "game_id": game["game_id"],
+        "word": game["word"],
+        "play_count": game["play_count"],
+        "win_count": win_count,
+        "avg_guesses": avg_guesses,
+        "guess_distribution": {},
+    }
+
+
+async def get_global_stats(redis) -> dict:
+    total_games = 0
+    total_players = 0
+    total_plays = 0
+    total_wins = 0
+
+    async for key in redis.scan_iter("games:*"):
+        total_games += 1
+        data = await redis.hgetall(key)
+        if data:
+            decoded = _decode_hash(data)
+            total_plays += int(decoded.get("play_count", 0))
+            total_wins += int(decoded.get("win_count", 0))
+
+    async for _key in redis.scan_iter("players:*"):
+        total_players += 1
+
+    overall_win_rate = round((total_wins / total_plays * 100), 1) if total_plays > 0 else 0.0
+
+    return {
+        "total_games": total_games,
+        "total_players": total_players,
+        "total_plays": total_plays,
+        "overall_win_rate": overall_win_rate,
+    }
