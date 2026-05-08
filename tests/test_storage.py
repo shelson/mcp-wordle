@@ -314,6 +314,31 @@ async def test_get_game_stats(redis_db, admin_token):
 
 
 @pytest.mark.asyncio
+async def test_get_game_stats_avg_guesses(redis_db, admin_token):
+    await redis_db.hset(
+        "players:player-avg",
+        mapping={
+            "token": "player-avg", "created_at": "2024-01-01T00:00:00",
+            "games_played": "0", "games_won": "0", "total_guesses": "0",
+            "current_streak": "0", "max_streak": "0",
+            "total_solve_time": "0.0", "avg_solve_time": "0.0", "guess_dist": "{}"
+        },
+    )
+    game = await create_game(redis_db, "SLATE", admin_token)
+    # Win in 1 guess
+    s1 = await create_session(redis_db, game["game_id"], "player-avg")
+    await add_guess(redis_db, s1["session_id"], "SLATE", "SLATE")
+    # Lose in 6 guesses (total_guesses = 7, play_count = 2)
+    s2 = await create_session(redis_db, game["game_id"], "player-avg")
+    for word in ["CRANE", "ADIEU", "AUDIO", "STARE", "RAISE", "SPLIT"]:
+        await add_guess(redis_db, s2["session_id"], word, "SLATE")
+
+    stats = await get_game_stats(redis_db, game["game_id"])
+    # 7 total guesses across 2 plays → avg = 3.5
+    assert stats["avg_guesses"] == 3.5
+
+
+@pytest.mark.asyncio
 async def test_get_game_stats_nonexistent(redis_db):
     result = await get_game_stats(redis_db, "nope")
     assert result is None

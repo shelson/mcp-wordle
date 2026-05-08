@@ -244,8 +244,9 @@ async def get_game_stats(redis, game_id: str) -> dict | None:
         return None
 
     win_count = game["win_count"]
+    play_count = game["play_count"]
     total_guesses = game["total_guesses"]
-    avg_guesses = round((total_guesses / win_count), 1) if win_count > 0 else 0.0
+    avg_guesses = round((total_guesses / play_count), 1) if play_count > 0 else 0.0
 
     return {
         "game_id": game["game_id"],
